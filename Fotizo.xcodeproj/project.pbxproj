@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		39BDD215283960DD00347AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDD214283960DD00347AD0 /* AppDelegate.swift */; };
 		39BDD217283960DD00347AD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDD216283960DD00347AD0 /* SceneDelegate.swift */; };
-		39BDD219283960DD00347AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDD218283960DD00347AD0 /* ViewController.swift */; };
+		39BDD219283960DD00347AD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDD218283960DD00347AD0 /* MainViewController.swift */; };
 		39BDD21C283960DD00347AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BDD21A283960DD00347AD0 /* Main.storyboard */; };
 		39BDD21E283960DF00347AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39BDD21D283960DF00347AD0 /* Assets.xcassets */; };
 		39BDD221283960DF00347AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BDD21F283960DF00347AD0 /* LaunchScreen.storyboard */; };
+		39BDD22B2839643D00347AD0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BDD22A2839643D00347AD0 /* Article.swift */; };
+		D63BF260495DAA66EE37CAF1 /* Pods_Fotizo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC2AC068E0AEA36DF2EC6E6 /* Pods_Fotizo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2561CEC24C1387D39BB8500D /* Pods-Fotizo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fotizo.release.xcconfig"; path = "Target Support Files/Pods-Fotizo/Pods-Fotizo.release.xcconfig"; sourceTree = "<group>"; };
 		39BDD211283960DD00347AD0 /* Fotizo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fotizo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BDD214283960DD00347AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39BDD216283960DD00347AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		39BDD218283960DD00347AD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		39BDD218283960DD00347AD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		39BDD21B283960DD00347AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		39BDD21D283960DF00347AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39BDD220283960DF00347AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39BDD222283960DF00347AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BDD22A2839643D00347AD0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		C1258DCFB13BF22F1D5114F6 /* Pods-Fotizo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fotizo.debug.xcconfig"; path = "Target Support Files/Pods-Fotizo/Pods-Fotizo.debug.xcconfig"; sourceTree = "<group>"; };
+		EDC2AC068E0AEA36DF2EC6E6 /* Pods_Fotizo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fotizo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63BF260495DAA66EE37CAF1 /* Pods_Fotizo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8D7919C8C01674F1B99710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC2AC068E0AEA36DF2EC6E6 /* Pods_Fotizo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39BDD208283960DD00347AD0 = {
 			isa = PBXGroup;
 			children = (
 				39BDD213283960DD00347AD0 /* Fotizo */,
 				39BDD212283960DD00347AD0 /* Products */,
+				85EA85DA456EF9A1B7240723 /* Pods */,
+				0F8D7919C8C01674F1B99710 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,42 @@
 		39BDD213283960DD00347AD0 /* Fotizo */ = {
 			isa = PBXGroup;
 			children = (
+				39BDD2292839642500347AD0 /* Model */,
 				39BDD214283960DD00347AD0 /* AppDelegate.swift */,
 				39BDD216283960DD00347AD0 /* SceneDelegate.swift */,
-				39BDD218283960DD00347AD0 /* ViewController.swift */,
+				39BDD2282839638200347AD0 /* Screens */,
 				39BDD21A283960DD00347AD0 /* Main.storyboard */,
 				39BDD21D283960DF00347AD0 /* Assets.xcassets */,
 				39BDD21F283960DF00347AD0 /* LaunchScreen.storyboard */,
 				39BDD222283960DF00347AD0 /* Info.plist */,
 			);
 			path = Fotizo;
+			sourceTree = "<group>";
+		};
+		39BDD2282839638200347AD0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				39BDD218283960DD00347AD0 /* MainViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		39BDD2292839642500347AD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39BDD22A2839643D00347AD0 /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		85EA85DA456EF9A1B7240723 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1258DCFB13BF22F1D5114F6 /* Pods-Fotizo.debug.xcconfig */,
+				2561CEC24C1387D39BB8500D /* Pods-Fotizo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39BDD225283960DF00347AD0 /* Build configuration list for PBXNativeTarget "Fotizo" */;
 			buildPhases = (
+				648B6C18B4D0C9B6494AD72C /* [CP] Check Pods Manifest.lock */,
 				39BDD20D283960DD00347AD0 /* Sources */,
 				39BDD20E283960DD00347AD0 /* Frameworks */,
 				39BDD20F283960DD00347AD0 /* Resources */,
+				67A766682304DC334D3AFA7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +179,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		648B6C18B4D0C9B6494AD72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fotizo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67A766682304DC334D3AFA7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fotizo/Pods-Fotizo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fotizo/Pods-Fotizo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fotizo/Pods-Fotizo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39BDD20D283960DD00347AD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39BDD219283960DD00347AD0 /* ViewController.swift in Sources */,
+				39BDD22B2839643D00347AD0 /* Article.swift in Sources */,
+				39BDD219283960DD00347AD0 /* MainViewController.swift in Sources */,
 				39BDD215283960DD00347AD0 /* AppDelegate.swift in Sources */,
 				39BDD217283960DD00347AD0 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,6 +373,7 @@
 		};
 		39BDD226283960DF00347AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1258DCFB13BF22F1D5114F6 /* Pods-Fotizo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +402,7 @@
 		};
 		39BDD227283960DF00347AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2561CEC24C1387D39BB8500D /* Pods-Fotizo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

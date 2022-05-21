@@ -1,0 +1,6 @@
+framework module Pods_Fotizo {
+  umbrella header "Pods-Fotizo-umbrella.h"
+
+  export *
+  module * { export * }
+}
